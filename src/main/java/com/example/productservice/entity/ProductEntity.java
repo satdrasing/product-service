@@ -17,6 +17,8 @@ public class ProductEntity {
     private long productId;
 
     //@Column(name = "product_name")
+    // default hibernate naming strategy will include underscore
+    //so column annotation is optional
     private String productName;
 
     @Column(name = "product_description")
